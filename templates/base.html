@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% import "macros/html" as html -%}
+  {% import "macros/crumbs" as breadcrumbs with context -%}
+  <head>
+    {% block head %}
+      {% block meta %}
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Jonas Tech Notes"/>
+    <meta name="author" content="Jonas Gorauskas"/>
+      {% endblock %}
+      <title>
+        {% block title_prefix -%}
+          {% if 'wiki-name' in config %}{{ config['wiki-name']|e }} - {% endif %}
+        {%- endblock %}
+        {% block title -%}
+          {{ title }}
+        {%- endblock %}
+      </title>
+
+      <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    {{ html.cssimport(make_relative("/css/bootstrap.min.css")) }}
+    {{ html.cssimport(make_relative("/css/bootstrap-theme.min.css")) }}
+    {{ html.cssimport(make_relative("/css/site-template.css")) }}
+    {{ html.cssimport(make_relative("/css/pygments.css")) }}
+
+    {% endblock head %}
+  </head>
+
+  <body {% block body_attrs %}{% endblock %}>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" rel="home" href="/"><img style="max-width: 100px; margin-top: -7px;" src="/img/glider-small.png"/>  Jonas' Tech Notebook</a>
+        </div>
+        <div class="col-sm-3 col-md-3 pull-right">
+          <form class="navbar-form" role="search" action="http://google.com/search" method="get">
+            <div class="input-group">
+              <input type="hidden" value="google custom search" name="q">
+              <input type="text" class="form-control" placeholder="Search" id="jtn-query" name="q"/>
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        {% block crumbs %}
+          {{ breadcrumbs.crumbs(crumbs) }}
+        {% endblock crumbs %}
+      <div class="panel panel-default">
+        {% block content_header %}
+        {% endblock content_header %}
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </div><!-- /.container -->
+
+      {% block body_footer %}
+    <div id="footer" class="navbar-fixed-bottom">
+      <div class="container">
+        <p class="text-muted">
+          &copy; MMXIV Jonas Gorauskas - <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Some Rights Reserved</a>
+        </p>
+        <img src="/img/madewithemacs.png"/>&nbsp;&nbsp;&nbsp;
+        <img src="/img/python-powered-w-70x28.png"/>
+      </div>
+    </div>
+      {% endblock body_footer %}
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    {{ html.jsimport(make_relative("/js/jquery-2.1.1.min.js")) }}
+    {{ html.jsimport(make_relative("/js/bootstrap.min.js")) }}
+
+    <script type="text/javascript">
+      $('form').submit(function(){
+        $('input#jtn-query').val('site:www.gorauskas.org ' + $('input#jtn-query').val());
+        return true;
+      });
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-56840935-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

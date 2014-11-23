@@ -1,0 +1,19 @@
+server {
+    server_name www.gorauskas.org;
+    rewrite ^(.*) http://gorauskas.org$1 permanent;
+}
+
+server {
+    listen 80;
+    server_name  gorauskas.org;
+
+    root   /var/www/gorauskas.org;
+    index  index.html;
+
+    access_log /var/log/nginx/gorauskas.org.access.log;
+    error_log /var/log/nginx/gorauskas.org.error.log;
+
+    location / {
+        try_files $uri/ $uri.html $uri/index.html index.html =404;
+    }
+}

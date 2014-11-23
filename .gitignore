@@ -1,0 +1,4 @@
+*.pyc
+fabfile.py
+tmp
+gorauskas.org

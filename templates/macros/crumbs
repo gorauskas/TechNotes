@@ -1,0 +1,15 @@
+{% macro crumbs(breadcrumbs) %}
+  {% if breadcrumbs %}
+    <ol class="breadcrumb">
+      {% for name, title, href in breadcrumbs %}
+        <li{% if loop.last %} class="active"{% endif %}>
+          {% if not href %}
+            {{ title|e }}
+          {% else %}
+            <a href="{{ make_relative(href)|e }}">{{ title|e }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  {% endif %}
+{% endmacro %}

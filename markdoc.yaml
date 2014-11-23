@@ -1,0 +1,35 @@
+# Metadata
+wiki-name: "Jonas' Tech Notes"
+
+# Directories
+hide-prefix: ""
+wiki-dir: "wiki"
+static-dir: "static"
+html-dir: "gorauskas.org"
+template-dir: "templates"
+temp-dir: "tmp"
+cvs-exclude: true
+
+# Building
+document-extensions: [.md, .mdown, .markdown, .wiki, .text]
+generate-listing: always
+listing-filename: "_list.html"
+use-default-static: false
+use-default-templates: false
+
+# Rendering
+markdown:
+  safe-mode: false
+  output-format: html
+  extensions: [codehilite, def_list]
+  extension-configs:
+    codehilite:
+      force_linenos: true
+
+# Serving
+server:
+  bind: '127.0.0.1'
+  port: 8010
+  num-threads: 10
+  request-queue-size: 5
+  timeout: 10
