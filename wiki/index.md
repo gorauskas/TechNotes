@@ -24,6 +24,8 @@ Wiki. Please refer to those resources if there are problems.
 * [Post-Install Notes][arch2]
 * [Arch on the Pi][arch3]
 * [Pacman key issues on Linode][arch4]
+* [Arch Linux Encrypted Partition Scheme][arch5]
+* [Arch Linux Regular Partition Scheme][arch6]
 
 ### Debian Linux
 
@@ -113,6 +115,8 @@ Various other interesting notes...
 [arch2]: /linux/arch/ArchPostInstallNotes "My Post Installation Notes"
 [arch3]: /linux/arch/ArchLinuxOnRaspberryPi "Arch on a Raspberry Pi"
 [arch4]: /linux/arch/PacmanKeyIssuesOnLinode "Pacman key issues on Linode"
+[arch5]: /linux/arch/ArchEncryptedPartitionScheme "Arch Linux Encrypted Partition Scheme"
+[arch6]: /linux/arch/ArchRegularPartitionScheme "Arch Linux Regular Partition Scheme"
 
 [debian1]: /linux/debian/SetupDebianBasedVM "Setup a Debian-based VM"
 [debian2]: /linux/debian/SecuringYourDebianBasedVM "Securing your Debian-based VM"

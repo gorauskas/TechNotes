@@ -20,95 +20,13 @@ refer to the Arch Linux wiki and installation notes.
 
 ## Prepare Hard Disks ##
 
-List the current partition structure of the hard drive on which you want to
-install Arch:
+You can now take one of two paths for setting up your disks. You can either
+setup a regular set of partitions or setup LVM partitions on LUKS. The former
+method sets up _plain text_ or unencrypted partitions. The latter method sets up
+encrypted partitions that require a key to open every time the system reboots.
 
-    lsblk
-
-The commands listed below assume the following: 1) The HD is accessible via
-`/dev/sda`, 2) We'll use a BIOS boot with a GPT table, 3) We'll use 3
-partitions, one for BIOS boot, one for `/`, one for `/home`, and one for Swap
-space, and 4) You are using a 1TB Hard Drive. If your setup deviates from these
-assumptions, then you will need to change it accordingly.
-
-To partition and format your drive run:
-
-    cgdisk /dev/sda
-
-This is a version of `cfdisk` that creates GPT partition tables. It works pretty
-much like `cfdisk`. In most cases, you can ignore the warning about damages GPT
-structures. Ensure that `free space` is selected in the the partition list, then
-invoke the `New` action.
-
-A quick digression... There is 2 ways that the partitioning can go at this
-point, in my experience. If the `First Sector` of the new partition is set to a
-default value of 2048 it means that the tool will leave 1007Kb of free space at
-the front of the drive. This is fine at this point and the we will use that free
-space later. If the `First Sector` of the new partition is set to a default of
-value of 34 it means that you will need to allocate a small BIOS Boot partition
-at the beginning of the drive with a size of 1007Kb. Below we set the BIOS boot
-partition now before the other partitions.
-
-Create a small BIOS boot partition with the following settings:
-
-1. First Sector = default
-2. Size = 1007K
-3. Partition Type = ef02
-
-Create a `/` root partition with the following settings:
-
-1. First Sector = default
-2. Size = 200G
-3. Partition Type = 8300
-
-Create a swap partition with the following settings:
-
-1. First Sector = default
-2. Size = 16G (I use the amount of physical RAM I have on the computer)
-3. Partition Type = 8200
-
-Create a `/home` partition with the following settings:
-
-1. First Sector = default
-2. Size = default - use up the remainder free space available
-3. Partition Type = 8300
-
-Now select the `Write` action in `cgdisk` and confirm by typing `yes` and then
-`Quit`. Now you can check the partition structure again by running `lsblk`. We
-expect to see something like this:
-
-    NAME               SIZE       TYPE
-    sda                 1TB       disk
-    |- sda1           1007K       part
-    |- sda2            200G       part
-    |- sda3             16G       part
-    \- sda4            784G       part
-
-At this point you have a new partition table written to the disk. But to make it
-useful, you will also need to create a file system in each partition. In our
-example, we will leave the `/dev/sda1` BIOS boot partition untouched. Make a
-usable file system for our Linux partitions:
-
-    mkfs.ext4 /dev/sda2
-    mkfs.ext4 /dev/sda4
-
-Then create and activate the swap area:
-
-    mkswap /dev/sda3
-    swapon /dev/sda3
-
-Check everything is nice and tight:
-
-    lsblk /dev/sda
-
-Now you can mount the newly created local hard disk:
-
-    mount /dev/sda2 /mnt
-
-You should also create a mount point for `/home` and mount it now:
-
-    mkdir /mnt/home
-    mount /dev/sda4 /mnt/home
+1. [Regular partition scheme][archdisk1]
+2. [Encrypted partition scheme][archdisk2]
 
 ## Install the Base System ##
 
@@ -133,88 +51,61 @@ Change the root folder into the newly installed system location:
 
     arch-chroot /mnt /bin/bash
 
-## Language and Location Settings ##
+## Setup Script ##
 
-To set your locale and language, first open the `locale.gen` file in `mg`:
+You need to do a bunch of setup stuff on the new system now. These tasks include:
 
-    mg /etc/locale.gen
+1. Language and Location Settings
+2. Console font
+3. Setting the Timezone
+4. Setting the Hardware Clock
+5. Setting the hostname
+6. Enabling networking by default
+7. ... and finally, setting the root password
 
-Uncomment the line that reads:
+Luckly for you, I created a quick script to accomplish all of the above in one
+fell swoop. Just do the following:
 
-    en_US.UTF-8 UTF-8
-
-Then execute the following command:
-
-    locale-gen
-
-Also run the following commands in order to persist some settings:
-
-    echo LANG=en_US.UTF-8 > /etc/locale.conf
-    export LANG=en_US.UTF-8
-
-## Console ##
-
-Change the default console font to something that can handle unicode properly:
-
-    mg /etc/vconsole.conf
-    FONT=Lat2-Terminus16
-
-The FONT line should be added to the file opened with `mg`
-
-## Set Timezone ##
-
-Set the timezone by creating a symbolic link to the correct ZoneInfo file:
-
-    ln -s /usr/share/zoneinfo/UTC /etc/localtime
-
-**Note to self:** Don't do something cute like using
-`/usr/share/zoneinfo/America/Tijuana` because it will screw-up your Daylight
-Savings Time settings later.
-
-## Hardware Clock ##
-
-Always set the hardware clock to UTC:
-
-    hwclock --systohc --utc
-
-## Hostname ##
-
-Set the system hostname:
-
-    echo <myhostname> > /etc/hostname
-
-
-## Root Password ##
-
-We first need to give a root password so we can perform administrative tasks.
-
-    passwd
-
-## Enable Networking ##
-
-In order for the new system to connect to network on boot, do the
-following. First find the main interface name:
-
-    ip link
-
-Then tell the system to start dhcp deamon automatically:
-
-    systemctl enable dhcpcd.service
-
-You can also find out your dynamically leased ip address like this:
-
-    ip addr
-
-Also start the SSH daemon automatically:
-
-    systemctl enable sshd.service
+    cd /tmp
+    wget -c http://gorauskas.biz/arch-setup.sh
+    chmod +x arch-setup.sh
+    ./arch-setup.sh
 
 ## Configure the Boot Loader ##
 
-We should already have `grub` installed from when we ran `pacstrap` above. To
-configure `grub` for bios motherboards do the following:
+You should already have `grub` installed from when we ran `pacstrap` above.
+This is now one of the most crucial pieces of a new Arch installation. There are
+2 different ways that you can go on this step. It all hinges on how you prepared
+the hard drives above.
 
-    grub-install --target=i386-pc --recheck /dev/sda
+If you chose to use regular and unencrypted partitions, simply run the following
+to configure `grub`:
+
+    grub-install --recheck /dev/sda
+    grub-mkconfig -o /boot/grub/grub.cfg
+
+If you chose to use an encrypted hard drive scheme the setup is a little more
+involved.
+
+Edit the `/etc/mkinitcpio.conf` file and make sure that the `HOOKS` setting
+looks like this:
+
+    HOOKS="base udev autodetect modconf block keyboard encrypt lvm2 resume filesystems fsck"
+
+Then generate the initfs:
+
+    mkinitcpio -p linux
+
+Edit the `/etc/default/grub` file and make sure the `GRUB_CMDLINE_LINUX` looks
+like this:
+
+    GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda3:lvm root=/dev/system/root resume=/dev/system/swap"
+
+Remember that things have to match _your_ actual setup. The above matches the
+names we gave things when we setup our disks above. Now you are ready to
+generate the GRUB config file:
+
+    grub-install --recheck /dev/sda
     grub-mkconfig -o /boot/grub/grub.cfg
 
 ## Unmount and Reboot ##
@@ -234,3 +125,6 @@ refer to the [Arch wiki][id1] or the [Beginner's Guide][id2].
 
 [id1]: https://wiki.archlinux.org/index.php/Installation_Guide "Arch Installation Guide"
 [id2]: https://wiki.archlinux.org/index.php/Beginners%27_Guide "Arch Beginners Guide"
+
+[archdisk1]: /linux/arch/ArchRegularPartitionScheme "Arch Linux Regular Partition Scheme"
+[archdisk2]: /linux/arch/ArchEncryptedPartitionScheme "Arch Linux Encrypted Partition Scheme"
