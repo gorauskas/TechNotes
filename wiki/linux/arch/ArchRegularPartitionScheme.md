@@ -95,5 +95,8 @@ You should also create a mount point for `/home` and mount it now:
     mkdir /mnt/home
     mount /dev/sda4 /mnt/home
 
-At this point you are ready to install the base system with the `pacstrap`
-script.
+At this point you are ready to [install the base system][arch1] with the
+`pacstrap` script.
+
+
+[arch1]: /linux/arch/ArchInstallNotes "My Installation Notes"
