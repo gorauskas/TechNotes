@@ -71,8 +71,7 @@ usable file system for our `/boot` partition:
 
 Now you will also need to create the crypto container for the larger partition:
 
-    cryptsetup -c aes-xts-plain64 -s 512 -h sha512 -i 5000 --use-random \
-    luksFormat /dev/sda3
+    cryptsetup -c aes-xts-plain64 -s 512 -h sha512 -i 5000 --use-random luksFormat /dev/sda3
 
 Follow the steps to create a passphrase. Next we need to open the crypto
 container:
@@ -93,7 +92,7 @@ And finally you create the Logical Volumes on the volume group:
 
     lvcreate -L 16G system -n swap
     lvcreate -L 100G system -n root
-    lvcreate -L +100%FREE system -n home
+    lvcreate -l +100%FREE system -n home
 
 Now you need to format the file system on each of the logical volumes:
 

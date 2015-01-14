@@ -32,7 +32,7 @@ encrypted partitions that require a key to open every time the system reboots.
 
 You should now be prepared to start the installation of the base Arch system:
 
-    pacstrap -i /mnt base base-devel mg python2 openssh sudo grub
+    pacstrap -i /mnt base base-devel mg python2 openssh wget curl sudo grub
 
 The above will take several minutes. After the base install finishes, you will
 need to generate a `fstab` file so that the system knows what to mount at boot
@@ -78,13 +78,13 @@ This is now one of the most crucial pieces of a new Arch installation. There are
 2 different ways that you can go on this step. It all hinges on how you prepared
 the hard drives above.
 
-If you chose to use regular and unencrypted partitions, simply run the following
+**If you chose to use regular and unencrypted partitions**, simply run the following
 to configure `grub`:
 
     grub-install --recheck /dev/sda
     grub-mkconfig -o /boot/grub/grub.cfg
 
-If you chose to use an encrypted hard drive scheme the setup is a little more
+**If you chose to use an encrypted hard drive scheme** the setup is a little more
 involved.
 
 Edit the `/etc/mkinitcpio.conf` file and make sure that the `HOOKS` setting
