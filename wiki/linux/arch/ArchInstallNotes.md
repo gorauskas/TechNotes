@@ -32,7 +32,7 @@ encrypted partitions that require a key to open every time the system reboots.
 
 You should now be prepared to start the installation of the base Arch system:
 
-    pacstrap -i /mnt base base-devel mg python2 openssh wget curl sudo grub
+    pacstrap -i /mnt base base-devel mg python2 openssh rsync curl sudo grub
 
 The above will take several minutes. After the base install finishes, you will
 need to generate a `fstab` file so that the system knows what to mount at boot
@@ -67,7 +67,7 @@ Luckly for you, I created a quick script to accomplish all of the above in one
 fell swoop. Just do the following:
 
     cd /tmp
-    wget -c http://gorauskas.biz/arch-setup.sh
+    curl -O http://gorauskas.biz/arch-setup.sh
     chmod +x arch-setup.sh
     ./arch-setup.sh
 
