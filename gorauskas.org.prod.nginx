@@ -1,11 +1,33 @@
 server {
+    listen 443 ssl;
     server_name www.gorauskas.org;
-    rewrite ^(.*) http://gorauskas.org$1 permanent;
+
+    ssl_certificate /var/certs/gorauskas.org.uni.crt;
+    ssl_certificate_key /var/certs/jgg-tlscert-server-key.pem;
+    ssl_protocols  TLSv1 TLSv1.1 TLSv1.2;
+
+    return 301 $scheme://gorauskas.org$request_uri;
 }
 
 server {
     listen 80;
-    server_name  gorauskas.org;
+    server_name www.gorauskas.org;
+    return 301 https://gorauskas.org$request_uri;
+}
+
+server {
+    listen 80;
+    server_name gorauskas.org;
+    return 301 https://gorauskas.org$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name gorauskas.org;
+
+    ssl_certificate /var/certs/gorauskas.org.uni.crt;
+    ssl_certificate_key /var/certs/jgg-tlscert-server-key.pem;
+    ssl_protocols  TLSv1 TLSv1.1 TLSv1.2;
 
     root   /var/www/gorauskas.org;
     index  index.html;
