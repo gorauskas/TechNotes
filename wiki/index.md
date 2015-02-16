@@ -13,6 +13,7 @@ and as my primary OS on my workstation at home and at work. Here are some notes:
 * [Install &amp; Connect to PostgreSQL][linux3]
 * [PostgreSQL Remote Management][linux4]
 * [SystemD For Administrators][linux5]
+* [Configuring and Using Chrony][linux6]
 
 ### Arch Linux
 
@@ -130,6 +131,7 @@ Various other interesting notes...
 [linux3]: /linux/InstallConnectPostgres "Install &amp; connect to PostgreSQL"
 [linux4]: /linux/PostgreSQLRemoteManagement "PostgreSQL Remote Management"
 [linux5]: /linux/SystemD4Admins "SystemD For Administrators"
+[linux6]: /linux/ConfigureChrony "Configuring and Using Chrony"
 
 [emacs1]: /tools/emacs/BuildInstallEmacsFromSourceUbuntu1304 "Building & Installing Emacs"
 [emacs2]: /tools/emacs/SpookModeForEmacs "Emacs Utility For Overloading The NSA Line Eater"

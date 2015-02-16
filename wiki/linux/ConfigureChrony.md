@@ -33,7 +33,7 @@ much simpler and easier to use implemention: Chrony. Chrony implements the NTP
 protocol and can act as either a client or a server. I use them as both. Here's
 how I'm doing it...
 
-First, install `chrony` ... In Debian, simple run the following command
+First, install `chrony` ... In Debian, simply run the following command
 
     $ sudo apt-get install chrony
 
@@ -41,9 +41,9 @@ There are 2 main programs that come with `chrony`: the client and the server or
 `chronyc` and `chronyd` respectively. `chronyd` is a daemon which runs in
 background on the system. It obtains measurements via the network of the system
 clock’s offset relative to time servers on other systems and adjusts the system
-time accordingly. `chronyc` provides a user interface to chronyd for monitoring
+time accordingly. `chronyc` provides a user interface to `chronyd` for monitoring
 its performance and configuring various settings. It can do so while running on
-the same computer as the chronyd instance it is controlling or a different
+the same computer as the `chronyd` instance it is controlling or a different
 computer.
 
 All of my systems use both `chronyc` and `chronyd`. I have one server that
