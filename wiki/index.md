@@ -27,6 +27,7 @@ Wiki. Please refer to those resources if there are problems.
 * [Pacman key issues on Linode][arch4]
 * [Arch Linux Encrypted Partition Scheme][arch5]
 * [Arch Linux Regular Partition Scheme][arch6]
+* [Enable Wifi Network from CLI][arch7]
 
 ### Debian Linux
 
@@ -118,6 +119,7 @@ Various other interesting notes...
 [arch4]: /linux/arch/PacmanKeyIssuesOnLinode "Pacman key issues on Linode"
 [arch5]: /linux/arch/ArchEncryptedPartitionScheme "Arch Linux Encrypted Partition Scheme"
 [arch6]: /linux/arch/ArchRegularPartitionScheme "Arch Linux Regular Partition Scheme"
+[arch7]: /linux/arch/EnableWifiNetworkFromCLI "Enable Wifi Network from CLI"
 
 [debian1]: /linux/debian/SetupDebianBasedVM "Setup a Debian-based VM"
 [debian2]: /linux/debian/SecuringYourDebianBasedVM "Securing your Debian-based VM"
