@@ -28,6 +28,8 @@ updating a file, but this is not widely implemented. Additionally, it does not
 help in the case where two clients are accessing the same file from machines
 with drifting clocks.
 
+## Installation
+
 Rather than use the `ntpd` or the Network Time Protocol daemon, I opted to use a
 much simpler and easier to use implemention: Chrony. Chrony implements the NTP
 protocol and can act as either a client or a server. I use them as both. Here's
@@ -46,9 +48,11 @@ its performance and configuring various settings. It can do so while running on
 the same computer as the `chronyd` instance it is controlling or a different
 computer.
 
+## Configuration
+
 All of my systems use both `chronyc` and `chronyd`. I have one server that
 looks to the Internet for its time source and all other machines point to this
-one server for their sources. You can achive this setup via configuration. THe
+one server for their sources. You can achive this setup via configuration. The
 first thing you need to setup is the external servers you are going to point
 to. Here's what I am using:
 
@@ -106,6 +110,8 @@ interesting configuration items for Chrony:
 
 6. Beyond the above settings, you can also set the values for log and PID files,
    allow remote management, etc.
+
+## The Client
 
 You may also want to interract with your `chronyd` server in real-time, and you
 can do that with the `chronyc` program. By calling simply `chronyc` on the
