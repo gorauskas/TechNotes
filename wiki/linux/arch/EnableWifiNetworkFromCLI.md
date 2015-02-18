@@ -2,7 +2,7 @@
 
 I use Arch Linux as the OS for several of my Raspberry Pies. There are times
 when you need to turn on wifi after Arch is installed on the SD card. Follow
-these steps:
+these steps to turn Wifi on:
 
 1. Make sure you can connect to the Pi (wired connection initially)
 2. SSH to the Pi and login
@@ -25,5 +25,5 @@ these steps:
         $ sudo netctl enable <profile>
         $ sudo netctl start <profile>
 
-Now you can safely unplog the network cable from the Pi and use the wifi
-network.
+Now you can safely unplug the network cable from the Pi and use the wifi
+network exclusively.
