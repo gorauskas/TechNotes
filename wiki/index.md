@@ -62,7 +62,6 @@ preffered workflows, feature details and genereal tips & tricks:
 * [Github Flow][git4]
 * [Migrating Git Repos][git5]
 
-
 ### Emacs
 
 Various notes about how to use and configure GNU Emacs. I love this quote from
@@ -101,6 +100,10 @@ Notes about programming and computer science
 ### CSharp
 
 * [List Comprehensions in CSharp][csharp1]
+
+### Python
+
+* [Time-Saving Tips for Python][python1]
 
 ## Other Stuff
 
@@ -155,6 +158,8 @@ Various other interesting notes...
 [code1]: /code/WriteYourOwnLanguage "So, you want to write your own language?"
 
 [csharp1]: /code/csharp/ListComprehensionsInCSharp "List Comprehensions In CSharp"
+
+[python1]: /code/python/TimeSavingTipsForPython "Time-Saving Tips for Python"
 
 [other1]: /other/InstallFaenzaIconTheme "Install Faenza Icons"
 [other2]: /other/ChangingDefaultBrowser "How to Change the Default Browser in Xubuntu"
