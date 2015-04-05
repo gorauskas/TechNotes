@@ -96,6 +96,7 @@ Neal Stephenson about his use of emacs:
 Notes about programming and computer science
 
 * [So, you want to write your own language?][code1]
+* [REST API Guidance][code2]
 
 ### CSharp
 
@@ -156,6 +157,7 @@ Various other interesting notes...
 [tools6]: /tools/SmashIntoVIM "Smash into Vim"
 
 [code1]: /code/WriteYourOwnLanguage "So, you want to write your own language?"
+[code2]: /code/RestApiGuidance "REST API Guidance"
 
 [csharp1]: /code/csharp/ListComprehensionsInCSharp "List Comprehensions In CSharp"
 
