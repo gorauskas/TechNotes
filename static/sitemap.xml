@@ -5,283 +5,323 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>http://www.gorauskas.org/</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/</loc>
+  <lastmod>2015-04-05T18:46:36Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/_list</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/_list.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/code/</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/code/</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/code/WriteYourOwnLanguage</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/code/RestApiGuidance.html</loc>
+  <lastmod>2015-04-05T18:46:36Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/code/_list</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/code/WriteYourOwnLanguage.html</loc>
+  <lastmod>2015-04-05T18:46:36Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/code/csharp/</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/code/_list.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/code/csharp/ListComprehensionsInCSharp</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/code/csharp/</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/code/csharp/_list</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/code/csharp/ListComprehensionsInCSharp.html</loc>
+  <lastmod>2015-04-05T18:46:36Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/code/csharp/_list.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/InstallConnectPostgres</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/code/python/</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/InstallNginxFromSource</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/code/python/TimeSavingTipsForPython.html</loc>
+  <lastmod>2015-04-05T18:46:36Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/LinuxKernelSourceScreeSaver</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/code/python/_list.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/PostgreSQLRemoteManagement</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/SystemD4Admins</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/ConfigureChrony.html</loc>
+  <lastmod>2015-04-05T18:46:36Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/_list</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/InstallConnectPostgres.html</loc>
+  <lastmod>2015-04-05T18:46:36Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/arch/</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/InstallNginxFromSource.html</loc>
+  <lastmod>2015-04-05T18:46:36Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/arch/ArchInstallNotes</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/LinuxKernelSourceScreeSaver.html</loc>
+  <lastmod>2015-04-05T18:46:36Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/arch/ArchLinuxOnRaspberryPi</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/PostgreSQLRemoteManagement.html</loc>
+  <lastmod>2015-04-05T18:46:36Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/arch/ArchPostInstallNotes</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/SystemD4Admins.html</loc>
+  <lastmod>2015-04-05T18:46:36Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/arch/PacmanKeyIssuesOnLinode</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/_list.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/arch/_list</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/arch/</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/debian/</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/arch/ArchEncryptedPartitionScheme.html</loc>
+  <lastmod>2015-04-05T18:46:36Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/debian/Debian7WithXfce4.10</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/arch/ArchInstallNotes.html</loc>
+  <lastmod>2015-04-05T18:46:36Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/debian/DebianKeptBackPackages</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/arch/ArchLinuxOnRaspberryPi.html</loc>
+  <lastmod>2015-04-05T18:46:36Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/debian/HandbrakeOnDebian</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/arch/ArchPostInstallNotes.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/debian/InstallRealFirefoxOnDebian7</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/arch/ArchRegularPartitionScheme.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/debian/SecuringYourDebianBasedVM</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/arch/EnableWifiNetworkFromCLI.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/debian/SetupDebianBasedVM</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/arch/PacmanKeyIssuesOnLinode.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/linux/debian/_list</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/arch/_list.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/other/</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/debian/</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/other/ChangingDefaultBrowser</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/debian/Debian7WithXfce4.10.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/other/InstallFaenzaIconTheme</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/debian/DebianKeptBackPackages.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/other/LinksysWRT54GLBehind2Wire</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/debian/HandbrakeOnDebian.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/other/ThreeRulesForProjectSelection</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/debian/InstallRealFirefoxOnDebian7.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/other/WhenYourBossSaysHello</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/debian/SecuringYourDebianBasedVM.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/other/_list</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/debian/SetupDebianBasedVM.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/linux/debian/_list.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/BurnIsoToUsb</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/other/</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/HandBrakeCliReference</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/other/ChangingDefaultBrowser.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/ResumeInterruptedDownloadsWithCurl</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/other/InstallFaenzaIconTheme.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/SmashIntoVIM</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/other/LinksysWRT54GLBehind2Wire.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/VBoxFailsToStartVM</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/other/ThreeRulesForProjectSelection.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/WgetUsageExamples</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/other/WhenYourBossSaysHello.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/_list</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/other/_list.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/emacs/</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/tools/</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/emacs/BuildInstallEmacsFromSourceUbuntu1304</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/tools/BurnIsoToUsb.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/emacs/MaximizingEmacsFrameOnStartupOnWindows</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/tools/HandBrakeCliReference.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/emacs/SpookModeForEmacs</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/tools/ResumeInterruptedDownloadsWithCurl.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/emacs/_list</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/tools/SmashIntoVIM.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/git/</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/tools/VBoxFailsToStartVM.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/git/GitAliases</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/tools/WgetUsageExamples.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/git/GitOnCygwinNote</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/tools/_list.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/git/GitWorkflow</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/tools/emacs/</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/git/GithubFlow</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/tools/emacs/BuildInstallEmacsFromSourceUbuntu1304.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/git/MigratingGitRepos</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/tools/emacs/MaximizingEmacsFrameOnStartupOnWindows.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://www.gorauskas.org/tools/git/_list</loc>
-  <lastmod>2014-11-19T06:33:54Z</lastmod>
+  <loc>https://www.gorauskas.org/tools/emacs/SpookModeForEmacs.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>https://www.gorauskas.org/tools/emacs/_list.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>https://www.gorauskas.org/tools/git/</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>https://www.gorauskas.org/tools/git/GitAliases.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>https://www.gorauskas.org/tools/git/GitOnCygwinNote.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>https://www.gorauskas.org/tools/git/GitWorkflow.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>https://www.gorauskas.org/tools/git/GithubFlow.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>https://www.gorauskas.org/tools/git/MigratingGitRepos.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>https://www.gorauskas.org/tools/git/_list.html</loc>
+  <lastmod>2015-04-05T18:46:37Z</lastmod>
   <priority>0.5000</priority>
  </url>
 </urlset>
