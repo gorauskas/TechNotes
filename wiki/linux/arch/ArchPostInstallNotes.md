@@ -185,8 +185,8 @@ Here is also a list of packages I'll need for daily use:
 
 ### Other
 
-I have also written some documentation about Arch and Printing and Arch and
-Virtualbox. Check it out.
+I have also written some documentation about Arch and Printing and [Arch and
+Virtualbox][id2]. Check it out.
 
 ## Reboot ##
 
@@ -196,3 +196,4 @@ customize the desktop, add extra monitors and software...
 
 
 [id1]: ArchInstallNotes.html "Personal Arch Installation Notes"
+[id2]: ArchVirtualBox.html "Arch Linux and Virtual Box"
