@@ -83,8 +83,9 @@ Enable a graphical login prompt:
 There are also a few extra packages you can install to make things look even
 pruttier... Icons and themes ...
 
-    yaourt -S gtk-engine-murrine gtk-engine-unico faenza-icon-theme xfce-theme-blackbird xfce-theme-greybird xfce-theme-albatross xcursor-themes xcursor-aero xcursors-oxygen
-
+    yaourt -S gtk-engine-murrine gtk-engine-unico faenza-icon-theme
+              xfce-theme-blackbird xfce-theme-greybird xfce-theme-albatross
+              xcursor-themes xcursor-aero xcursors-oxygen
 
 ## Tweaks ##
 
@@ -134,7 +135,10 @@ Linux receives an IP address via DHCP by using the DHCP client daemon
 
 Let's install some nice True Type fonts:
 
-    sudo pacman -S font-mathematica freetype2 terminus-font ttf-bitstream-vera ttf-cheapskate ttf-dejavu ttf-droid ttf-fira-mono ttf-fira-sans ttf-freefont ttf-inconsolata ttf-liberation ttf-linux-libertine ttf-ubuntu-font-family xorg-xfontsel
+    sudo pacman -S font-mathematica freetype2 terminus-font ttf-bitstream-vera
+                   ttf-cheapskate ttf-dejavu ttf-droid ttf-fira-mono
+                   ttf-fira-sans ttf-freefont ttf-inconsolata ttf-liberation
+                   ttf-linux-libertine ttf-ubuntu-font-family xorg-xfontsel
 
 ### User directories
 
@@ -150,7 +154,13 @@ Unlike Ubuntu or Linux Mint, Arch Linux won’t support many codecs or DVD
 playback out-of-the-box. The packages below should cover most of what you need
 to do.
 
-    sudo pacman -S alsa-firmware alsa-utils ffmpeg flac gst-libav gst-plugins-base gst-plugins-good gstreamer gstreamer0.10 gstreamer0.10-ffmpeg gstreamer0.10-good-plugins lame libdvdcss libdvdnav libdvdread libmpeg2 libtheora libvorbis mplayer pavucontrol pulseaudio pulseaudio-alsa pulseaudio-equalizer pulseaudio-gconf vlc winff x264 x265 xfce4-pulseaudio-plugin xvidcore
+    sudo pacman -S alsa-firmware alsa-utils ffmpeg flac gst-libav
+                   gst-plugins-base gst-plugins-good gstreamer gstreamer0.10
+                   gstreamer0.10-ffmpeg gstreamer0.10-good-plugins lame
+                   libdvdcss libdvdnav libdvdread libmpeg2 libtheora libvorbis
+                   mplayer pavucontrol pulseaudio pulseaudio-alsa
+                   pulseaudio-equalizer pulseaudio-gconf vlc winff x264 x265
+                   xfce4-pulseaudio-plugin xvidcore
 
 Unmute and test your speakers with the commands below. This is assuming you’re
 using ALSA and have a 2.0 setup.
@@ -162,14 +172,21 @@ using ALSA and have a 2.0 setup.
 
 Here is also a list of packages I'll need for daily use:
 
-    yaourt -S arandr bash-completion bzip2 cabextract cdrkit chrony clamav conkeror coreutils dropbox dropbox-cli emacs evince exaile exfat-utils file-roller filezilla firefox fish freerdp galculator gimp gksu gvfs gvfs-afc gvfs-mtp gzip hardinfo haveged htop ipython libreoffice libvncserver linux_logo lsb-release mc mg nmap ntfs-3g openssh openvpn opera p7zip pptpclient remmina rsync samba scrot thunar-archive-plugin thunar-media-tags-plugin thunar-volman tigervnc tlp tmux transmission truecrypt tumbler unace unarj unrar unzip util-linux viewnior vim wget x11vnc xchat xfburn zip zsh zsh-lovers zsh-syntax-highlighting
-
+    yaourt -S arandr bash-completion bzip2 cabextract cdrkit chrony clamav
+              conkeror coreutils dropbox dropbox-cli emacs evince exaile
+              exfat-utils file-roller filezilla firefox fish freerdp galculator
+              gimp gksu gvfs gvfs-afc gvfs-mtp gzip hardinfo haveged htop
+              ipython libreoffice libvncserver linux_logo lsb-release mc mg nmap
+              ntfs-3g openssh openvpn opera p7zip pptpclient remmina rsync samba
+              scrot thunar-archive-plugin thunar-media-tags-plugin thunar-volman
+              tigervnc tlp tmux transmission truecrypt tumbler unace unarj unrar
+              unzip util-linux viewnior vim wget x11vnc xchat xfburn zip zsh
+              zsh-lovers zsh-syntax-highlighting
 
 ### Other
 
 I have also written some documentation about Arch and Printing and Arch and
 Virtualbox. Check it out.
-
 
 ## Reboot ##
 
