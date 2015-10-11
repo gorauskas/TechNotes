@@ -14,6 +14,7 @@ and as my primary OS on my workstation at home and at work. Here are some notes:
 * [PostgreSQL Remote Management][linux4]
 * [SystemD For Administrators][linux5]
 * [Configuring and Using Chrony][linux6]
+* [Renew IP Lease][linux7]
 
 ### Arch Linux
 
@@ -28,6 +29,7 @@ Wiki. Please refer to those resources if there are problems.
 * [Arch Linux Encrypted Partition Scheme][arch5]
 * [Arch Linux Regular Partition Scheme][arch6]
 * [Enable Wifi Network from CLI][arch7]
+* [Arch Linux and Virtual Box][arch8]
 
 ### Debian Linux
 
@@ -124,6 +126,7 @@ Various other interesting notes...
 [arch5]: /linux/arch/ArchEncryptedPartitionScheme "Arch Linux Encrypted Partition Scheme"
 [arch6]: /linux/arch/ArchRegularPartitionScheme "Arch Linux Regular Partition Scheme"
 [arch7]: /linux/arch/EnableWifiNetworkFromCLI "Enable Wifi Network from CLI"
+[arch8]: /linux/arch/ArchVirtualBox "Arch linux and VirtualBox"
 
 [debian1]: /linux/debian/SetupDebianBasedVM "Setup a Debian-based VM"
 [debian2]: /linux/debian/SecuringYourDebianBasedVM "Securing your Debian-based VM"
@@ -138,6 +141,7 @@ Various other interesting notes...
 [linux4]: /linux/PostgreSQLRemoteManagement "PostgreSQL Remote Management"
 [linux5]: /linux/SystemD4Admins "SystemD For Administrators"
 [linux6]: /linux/ConfigureChrony "Configuring and Using Chrony"
+[linux7]: /linux/RenewIPLease "Renew IP Lease"
 
 [emacs1]: /tools/emacs/BuildInstallEmacsFromSourceUbuntu1304 "Building & Installing Emacs"
 [emacs2]: /tools/emacs/SpookModeForEmacs "Emacs Utility For Overloading The NSA Line Eater"
