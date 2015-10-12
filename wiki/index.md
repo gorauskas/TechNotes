@@ -3,6 +3,9 @@
 To see the complete list of pages in this wiki, you can browse the
 [directory listing][link2].
 
+<div markdown="1" class="row">
+<div markdown="1" class="col-md-6">
+
 ## Linux
 
 Linux is my OS of choice these days. I use it as a server to host my projects
@@ -42,6 +45,30 @@ Various notes on working with Debian-based VMs
 * [Install Handbrake][debian5]
 * [Install Kept Back Packages][debian6]
 
+## Tools
+
+Many notes on the various tools that I use:
+
+* [Basic WGET usage examples][tools1]
+* [Hand Brake CLI reference][tools2]
+* [Burn ISO to USB][tools3]
+* [Resume interrupted downloads with cURL in Linux][tools4]
+* [Virtual Box Fails to Start Virtual Machine][tools5]
+* [Smash into Vim][tools6]
+
+## Other Stuff
+
+Various other interesting notes...
+
+* [Install Faenza Icon Theme][other1]
+* [How to Change the Default Browser in Xubuntu][other2]
+* [Three Rules for Project Selection][other3]
+* [Running a Linksys WRT54GL with DD-WRT behind an AT&amp;T UVerse 2Wire Gateway][other4]
+* [When your boss says hello at the urinal...][other5]
+
+</div>
+<div markdown="1" class="col-md-6">
+
 ## Code
 
 Notes about programming and computer science
@@ -62,17 +89,6 @@ Notes about programming and computer science
 
 * [Time-Saving Tips for Python][python1]
 
-## Tools
-
-Many notes on the various tools that I use:
-
-* [Basic WGET usage examples][tools1]
-* [Hand Brake CLI reference][tools2]
-* [Burn ISO to USB][tools3]
-* [Resume interrupted downloads with cURL in Linux][tools4]
-* [Virtual Box Fails to Start Virtual Machine][tools5]
-* [Smash into Vim][tools6]
-
 ### GIT
 
 git is a distributed version control system. What follows are notes about my
@@ -84,7 +100,7 @@ preffered workflows, feature details and genereal tips & tricks:
 * [Github Flow][git4]
 * [Migrating Git Repos][git5]
 
-### Emacs
+## Emacs
 
 Various notes about how to use and configure GNU Emacs. I love this quote from
 Neal Stephenson about his use of emacs:
@@ -113,16 +129,8 @@ Neal Stephenson about his use of emacs:
 * [Emacs Utility For Overloading The NSA Line Eater][emacs2]
 * [Maximize the Active Emacs Frame on Startup on Windows][emacs3]
 
-## Other Stuff
-
-Various other interesting notes...
-
-* [Install Faenza Icon Theme][other1]
-* [How to Change the Default Browser in Xubuntu][other2]
-* [Three Rules for Project Selection][other3]
-* [Running a Linksys WRT54GL with DD-WRT behind an AT&amp;T UVerse 2Wire Gateway][other4]
-* [When your boss says hello at the urinal...][other5]
-
+</div>
+</div>
 
 [arch1]: /linux/arch/ArchInstallNotes "My Installation Notes"
 [arch2]: /linux/arch/ArchPostInstallNotes "My Post Installation Notes"
