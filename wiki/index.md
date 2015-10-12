@@ -42,6 +42,26 @@ Various notes on working with Debian-based VMs
 * [Install Handbrake][debian5]
 * [Install Kept Back Packages][debian6]
 
+## Code
+
+Notes about programming and computer science
+
+* [So, you want to write your own language?][code1]
+* [REST API Guidance][code2]
+
+### Java
+
+* [Check number primality using Java 8 Streams][java1]
+* [Get a prime number sequence using Java 8 Streams][java2]
+
+### CSharp
+
+* [List Comprehensions in CSharp][csharp1]
+
+### Python
+
+* [Time-Saving Tips for Python][python1]
+
 ## Tools
 
 Many notes on the various tools that I use:
@@ -92,21 +112,6 @@ Neal Stephenson about his use of emacs:
 * [Build & Install Emacs from Source on Ubuntu 13.04][emacs1]
 * [Emacs Utility For Overloading The NSA Line Eater][emacs2]
 * [Maximize the Active Emacs Frame on Startup on Windows][emacs3]
-
-## Code
-
-Notes about programming and computer science
-
-* [So, you want to write your own language?][code1]
-* [REST API Guidance][code2]
-
-### CSharp
-
-* [List Comprehensions in CSharp][csharp1]
-
-### Python
-
-* [Time-Saving Tips for Python][python1]
 
 ## Other Stuff
 
@@ -162,6 +167,9 @@ Various other interesting notes...
 
 [code1]: /code/WriteYourOwnLanguage "So, you want to write your own language?"
 [code2]: /code/RestApiGuidance "REST API Guidance"
+
+[java1]: /code/java/CheckNumberPrimalityUsingJavaStreams "Check number primality using Java 8 Streams"
+[java2]: /code/java/GetPrimeSequenceUsingJavaStreams "Get a prime number sequence using Java 8 Streams"
 
 [csharp1]: /code/csharp/ListComprehensionsInCSharp "List Comprehensions In CSharp"
 
