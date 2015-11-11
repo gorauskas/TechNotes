@@ -66,6 +66,12 @@ Various other interesting notes...
 * [Running a Linksys WRT54GL with DD-WRT behind an AT&amp;T UVerse 2Wire Gateway][other4]
 * [When your boss says hello at the urinal...][other5]
 
+### Security
+
+Notes on computer security related topics:
+
+* [Convert a PKCS #12 file into certificate and key files][sec1]
+
 </div>
 <div markdown="1" class="col-md-6">
 
@@ -191,3 +197,5 @@ Neal Stephenson about his use of emacs:
 
 [link1]: http://technomancy.us/ "Technomancy"
 [link2]: /_list "Directory listing"
+
+[sec1]: /other/security/ConvertPkcs12File "Convert a PKCS #12 file into certificate and key files"
