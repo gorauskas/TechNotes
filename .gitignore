@@ -1,4 +1,7 @@
+fabfile.py
 *.pyc
 tmp
 gorauskas.org
+gorauskas.org.prod.nginx
+gorauskas.org.test.nginx
 tls
