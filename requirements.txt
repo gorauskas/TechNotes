@@ -1,5 +1,5 @@
 CherryPy==3.6.0
-Jinja2==2.7.3
+Jinja2~>2.10.1
 Markdoc==0.6.6
 Markdown==2.5.2
 MarkupSafe==0.23
